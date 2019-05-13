@@ -1,0 +1,19 @@
+
+body {
+  margin-top: 60px;
+}
+h1 {
+  color: yellow;
+}
+h3 {
+  color: white;
+}
+.bg-silver {
+  background-color: silver;
+}
+.padding {
+  padding: 20px;
+}
+.margin {
+  margin-top: 20px;
+}

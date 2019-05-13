@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Rye');
+body {
+  background-color: silver;
+  font-family: 'Rye', cursive;
+  margin-top: 60px;
+}
+.jumbotron {
+  margin-top: 30px;
+}
+.upperCase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+<nav id="navbar">
+  <header>PHP Documentation</header>
+  <ul>
+    <a class="nav-link" href="#Getting_started" rel="internal"><li>Getting started</li></a>
+    <a class="nav-link" href="#Language_highlights" rel="internal"><li>Language Highlights</li></a>
+    <a class="nav-link" href="#Dependency_management" rel="internal"><li>Dependency Management</li></a>
+    <a class="nav-link" href="#Coding_practices" rel="internal"><li>Coding Practices</li></a>
+    <a class="nav-link" href="#Dependency_injection" rel="internal"><li>Dependency Injection</li></a>
+    <a class="nav-link" href="#Databases" rel="internal"><li>Databases</li></a>
+    <a class="nav-link" href="#Templating" rel="internal"><li>Templating</li></a>
+    <a class="nav-link" href="#Errors_and_exceptions" rel="internal"><li>Errors and Exceptions</li></a>
+    <a class="nav-link" href="#Security" rel="internal"><li>Security</li></a>
+    <a class="nav-link" href="#Testing" rel="internal"><li>Testing</li></a>
+    <a class="nav-link" href="#Servers_and_deployment" rel="internal"><li>Servers and Deployment</li></a>
+    <a class="nav-link" href="#Virtualization" rel="internal"><li>Virtualization</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+
+<!--Main-->
+
+<main id="main-doc">
+  
+  <!--Getting_started-->
+  <section class="main-section" id="Getting_started">
+    <header>Getting started</header>
+    <article>
+      <h2>Use the Current Stable Version (7.2)</h2>
+      <p>If you are getting started with PHP, start with the current stable release of <a href="http://php.net/downloads.php" target="_blank">PHP 7.2.</a> PHP 7.x adds many <a href="https://www.phptherightway.com/#language_highlights" target="_blank">new features</a> over the older 5.x versions. The engine has been largely re-written, and PHP is now even quicker than older versions.</p>
+      
+      <h2>Built-in web server</h2>
+      <p>With PHP 5.4 or newer, you can start learning PHP without installing and configuring a full-fledged web server. To start the server, run the following command from your terminal in your project’s web root:</p>
+      
+      <code>
+        > php -S localhost:8000
+      </code>
+      
+      <ul>
+        <li><a href="http://php.net/features.commandline.webserver">Learn about the built-in.</a></li>
+        <li><a href="http://php.net/features.commandline.webserver">Command line web server.</a></li>
+      </ul>
+
+    </article>
+  </section>
+  
+  <!--Language Highlights-->
+  <section class="main-section" id="Language_highlights">
+    <header>Language Highlights</header>
+    <article>
+      <h2>Programming Paradigms</h2>
+      <p>PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in PHP 5.3 (2009), and traits in PHP 5.4 (2012).</p>
+      
+      <h3>Object-oriented Programming</h3>
+      <p>PHP has a very complete set of object-oriented programming features including support for classes, abstract classes, interfaces, inheritance, constructors, cloning, exceptions, and more.</p>
+      
+      <ul>
+        <li><a href="https://secure.php.net/language.oop5">Read about Object-oriented PHP</a></li>
+        <li><a href="https://secure.php.net/language.oop5.traits">Read about Traits</a></li>
+      </ul>
+      
+      <h3>Functional Programming</h3>
+      <p>PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to other functions (a feature called Higher-order Functions) and functions can return other functions.</p>
+
+      <p>Recursion, a feature that allows a function to call itself, is supported by the language, but most PHP code is focused on iteration.</p>
+
+      <p>New anonymous functions (with support for closures) are present since PHP 5.3 (2009).</p>
+
+      <p>PHP 5.4 added the ability to bind closures to an object’s scope and also improved support for callables such that they can be used interchangeably with anonymous functions in almost all cases.</p>
+      
+      <ul>
+        <li>Continue reading on <a href="https://www.phptherightway.com/pages/Functional-Programming.html">Functional Programming in PHP</a></li>
+      </ul>
+      
+    </article>
+  </section>
+  
+  <!--Dependency Management-->
+  <section class="main-section" id="Dependency_management">
+    <header>Dependency Management</header>
+    <article>
+      <p>There are a ton of PHP libraries, frameworks, and components to choose from. Your project will likely use several of them — these are project dependencies. Until recently, PHP did not have a good way to manage these project dependencies. Even if you managed them manually, you still had to worry about autoloaders. That is no longer an issue.</p>
+
+      <p>Currently there are two major package management systems for PHP - <a href="https://www.phptherightway.com/#composer_and_packagist">Composer</a> and <a href="https://www.phptherightway.com/#pear">PEAR</a>. Composer is currently the most popular package manager for PHP, however for a long time PEAR was the primary package manager in use. Knowing PEAR’s history is a good idea, since you may still find references to it even if you never use it.</p>
+    </article>
+  </section>
+  
+  <!--Coding Practices-->
+  <section class="main-section" id="Coding_practices">
+    <header>Coding Practices</header>
+    <article>
+      <h2>The Basics</h2>
+      <p>PHP is a vast language that allows coders of all levels the ability to produce code not only quickly, but efficiently. However, while advancing through the language, we often forget the basics that we first learnt (or overlooked) in favor of short cuts and/or bad habits. To help combat this common issue, this section is aimed at reminding coders of the basic coding practices within PHP.</p>
+      
+      <ul>
+        <li>Continue reading on <a href="https://www.phptherightway.com/pages/The-Basics.html">The Basics</a></li>
+      </ul>
+      
+      <h2>Date and Time</h2>
+      <p>PHP has a class named DateTime to help you when reading, writing, comparing or calculating with date and time. There are many date and time related functions in PHP besides DateTime, but it provides nice object-oriented interface to most common uses. It can handle time zones, but that is outside this short introduction.</p>
+
+      <p>To start working with DateTime, convert raw date and time string to an object with createFromFormat() factory method or do new DateTime to get the current date and time. Use format() method to convert DateTime back to a string for output.</p>
+      
+      <code>
+        &lt;?php<br>
+        $raw = '22. 11. 1968';<br>
+        $start = DateTime::createFromFormat('d. m. Y', $raw);<br><br>
+
+        echo 'Start date: ' . $start->format('Y-m-d') . "\n";
+      </code><br>
+      
+      <code>
+        &lt;?php <br>
+        // create a copy of $start and add one month and 6 days <br>
+        $end = clone $start; <br>
+        $end->add(new DateInterval('P1M6D')); <br>
+
+        $diff = $end->diff($start); <br>
+        echo 'Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n"; <br>
+        // Difference: 1 month, 6 days (total: 37 days) <br>
+      </code>
+      
+      <code>
+        &lt;?php <br>
+        if ($start &lt; $end) { <br>
+        echo "Start is before the end!\n"; <br>
+        } <br>
+      </code>
+      
+    </article>
+  </section>
+  
+  <!--Dependency Injection-->
+  <section class="main-section" id="Dependency_injection">
+    <header>Dependency Injection</header>
+    <article>
+      <p>From <a href="https://wikipedia.org/wiki/Dependency_injection">Wikipedia:</a></p>
+      
+      <blockquote>
+        <p>Dependency injection is a software design pattern that allows the removal of hard-coded dependencies and makes it possible to change them, whether at run-time or compile-time.</p>
+      </blockquote>
+      
+      <p>This quote makes the concept sound much more complicated than it actually is. Dependency Injection is providing a component with its dependencies either through constructor injection, method calls or the setting of properties. It is that simple.</p>
+      
+      <h2>Basic Concept</h2>
+      
+      <p>We can demonstrate the concept with a simple, yet naive example.</p>
+      
+      <p>Here we have a Database class that requires an adapter to speak to the database. We instantiate the adapter in the constructor and create a hard dependency. This makes testing difficult and means the Database class is very tightly coupled to the adapter.</p>
+      
+      <code>
+        &lt;php
+        namespace Database;<br>
+
+        class Database <br>
+        { <br>
+        protected $adapter; <br>
+
+        public function __construct() <br>
+        { <br>
+        $this->adapter = new MySqlAdapter; <br>
+        } <br>
+        } <br>
+
+        class MysqlAdapter {} <br><br>
+      </code>
+      
+    </article>
+  </section>
+  
+  <!--Databases-->
+  <section class="main-section" id="Databases">
+    <header>Databases</header>
+    <article>
+      <p>Many times your PHP code will use a database to persist information. You have a few options to connect and interact with your database. The recommended option until PHP 5.1.0 was to use native drivers such as mysqli, pgsql, mssql, etc.</p>
+
+      <p>Native drivers are great if you are only using one database in your application, but if, for example, you are using MySQL and a little bit of MSSQL, or you need to connect to an Oracle database, then you will not be able to use the same drivers. You’ll need to learn a brand new API for each database — and that can get silly.</p>
+    </article>
+  </section>
+  
+  <!--Templating-->
+  <section class="main-section" id="Templating">
+    <header>Templating</header>
+    <article>
+      <p>Templates provide a convenient way of separating your controller and domain logic from your presentation logic. Templates typically contain the HTML of your application, but may also be used for other formats, such as XML. Templates are often referred to as “views”, which make up part of the second component of the model–view–controller (MVC) software architecture pattern.</p>
+    </article>
+  </section>
+  
+  <!--Errors and Exceptions-->
+  <section class="main-section" id="Errors_and_exceptions">
+    <header>Errors and Exceptions</header>
+    <article>
+      <p>In many “exception-heavy” programming languages, whenever anything goes wrong an exception will be thrown. This is certainly a viable way to do things, but PHP is an “exception-light” programming language. While it does have exceptions and more of the core is starting to use them when working with objects, most of PHP itself will try to keep processing regardless of what happens, unless a fatal error occurs.</p>
+    </article>
+  </section>
+  
+  <!--Security-->
+  <section class="main-section" id="Security">
+    <header>Security</header>
+    <article>
+      <ol>
+        <li>Code-data separation.
+          <ul>
+            <li>When data is executed as code, you get SQL Injection, Cross-Site Scripting, Local/Remote File Inclusion, etc.</li>
+            <li>When code is printed as data, you get information leaks (source code disclosure or, in the case of C programs, enough information to bypass ASLR).</li>
+          </ul>
+        </li>
+        <li>Application logic.
+          <ul>
+            <li>Missing authentication or authorization controls.</li>
+            <li>Input validation.</li>
+          </ul>
+        </li>
+        <li>Operating environment.
+          <ul>
+            <li>PHP versions.</li>
+            <li>Third party libraries.</li>
+            <li>The operating system.</li>
+          </ul>
+        </li>
+        <li>Cryptography weaknesses.
+          <ul>
+            <li>Weak random numbers.</li>
+            <li>Chosen-ciphertext attacks.</li>
+            <li>Side-channel information leaks.</li>
+          </ul>
+        </li>
+      </ol>
+    </article>
+  </section>
+  
+  <!--Testing-->
+  <section class="main-section" id="Testing">
+    <header>Testing</header>
+    <article>
+      <p>Writing automated tests for your PHP code is considered a best practice and can lead to well-built applications. Automated tests are a great tool for making sure your application does not break when you are making changes or adding new functionality and should not be ignored.</p>
+      <p>There are several different types of testing tools (or frameworks) available for PHP, which use different approaches - all of which are trying to avoid manual testing and the need for large Quality Assurance teams, just to make sure recent changes didn’t break existing functionality.</p>
+    </article>
+  </section>
+  
+  <!--Servers and Deployment-->
+  <section class="main-section" id="Servers_and_deployment">
+    <header>Servers and Deployment</header>
+    <article>
+      <p>PHP applications can be deployed and run on production web servers in a number of ways.</p>
+    </article>
+  </section>
+  
+  <!--Virtualization-->
+  <section class="main-section" id="Virtualization">
+    <header>Virtualization</header>
+    <article>
+      <p>Running your application on different environments in development and production can lead to strange bugs popping up when you go live. It’s also tricky to keep different development environments up to date with the same version for all libraries used when working with a team of developers.</p>
+      <p>If you are developing on Windows and deploying to Linux (or anything non-Windows) or are developing in a team, you should consider using a virtual machine. This sounds tricky, but besides the widely known virtualization environments like VMware or VirtualBox, there are additional tools that may help you setting up a virtual environment in a few easy steps.</p>
+    </article>
+  </section>
+  
+  <!--Reference-->
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <p>The best way to learn PHP is to read this source <a href="https://www.phptherightway.com/">PHP:The Right Way</a></p>
+    </article>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</main>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>

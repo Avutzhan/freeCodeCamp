@@ -1,0 +1,70 @@
+body {
+  font: 15px sans-serif;
+}
+
+.bar {
+  padding: 0px;
+}
+
+.notes {
+  font-size: 10px;
+  color: red;
+  padding: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  color: red;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bar .mouseover {
+  fill: orange;
+}
+
+.bar rect,
+.bar .mouseoff {
+  fill: purple;
+}
+
+.bar text {
+  fill: green;
+  font: 15px;
+}
+
+.axis text {
+  font: 15px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.card {
+  margin-left: 220px;
+}
+
+.tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  font: 1em;
+  pointer-events: none;
+  background-color: green;
+}
+
+.amount {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.year {
+  font-size: 0.8em;
+  font-weight: normal;
+}

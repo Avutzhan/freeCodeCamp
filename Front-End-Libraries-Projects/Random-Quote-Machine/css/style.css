@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+  background-image: url('http://antennadaily.ru/wp-content/uploads/2017/04/Background-White-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body, h1, h3, p {
+  font-family: 'Pacifico', cursive;
+}
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

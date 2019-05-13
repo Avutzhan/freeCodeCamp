@@ -1,0 +1,11 @@
+body {
+  background-image: url("http://www.wallpapersin4k.org/wp-content/uploads/2017/04/Wallpapers-Clock-10.jpg");
+  background-size:100%;
+  background-attachment: fixed;
+  color:white;
+  font-family: 'Kalam', cursive;
+  margin-top: 30px;
+}
+h1 {
+  display:inline;
+}

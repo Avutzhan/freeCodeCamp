@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+@import url('https://fonts.googleapis.com/css?family=Frijole|Paytone+One');
+@import url('https://fonts.googleapis.com/css?family=Frijole|Paytone+One|Roboto');
+body {
+  margin-top: 60px;
+  background-image: url('http://media.istockphoto.com/photos/seamless-sand-background-picture-id185265098?k=6&m=185265098&s=612x612&w=0&h=Xx3XNw8fJwUniCSxMzhN7xiLPnOnrCasGFH4DI41-bA=');
+}
+img {
+  width: 540px;
+}
+h1 {
+  font-family: 'Frijole', cursive;
+}
+.font {
+  font-family: 'Paytone One', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: -40px;
+  margin-bottom: 10px;
+  background-color: #FFCE6D;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+

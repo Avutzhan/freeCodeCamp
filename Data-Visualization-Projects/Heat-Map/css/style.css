@@ -1,0 +1,67 @@
+body {
+  background-color: green;
+}
+
+svg {
+  background-color: #fff;
+}
+
+rect {
+  stroke-width: 0px;
+  cursor: pointer;
+}
+
+text.scales {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.axis text {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #111;
+  shape-rendering: crispEdges;
+}
+
+.axislabel{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#chart {
+  background-color: white;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font: 1em;
+  pointer-events: none;
+  background-color: red;  
+}
+
+.year {
+  font-size: 1.1em;
+  color: white;
+  white-space: nowrap;
+}
+
+.temperature {
+  font-size: 0.95em;
+  color: white;
+  white-space: nowrap;
+}
+
+.variance {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: white;
+  white-space: nowrap;
+}
+
