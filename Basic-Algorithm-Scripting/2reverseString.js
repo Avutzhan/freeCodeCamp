@@ -1,5 +1,5 @@
-function reverseString(str) {
+function 2(str) {
     return str.split('').reverse().join('');
 }
 
-reverseString("hello");
+2("hello");
