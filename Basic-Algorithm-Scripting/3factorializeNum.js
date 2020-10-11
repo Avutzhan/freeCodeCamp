@@ -1,4 +1,4 @@
-//solution 1
+//Best Solution 1 very simple
 function factorialize(num) {
     for (var product = 1; num > 0; num--) {
         product *= num;
@@ -8,7 +8,7 @@ function factorialize(num) {
 
 factorialize(5);
 
-//solution 2 recursion
+//Best Solution 2 recursion
 function factorialize(num) {
     if (num === 0) {
         return 1;

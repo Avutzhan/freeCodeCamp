@@ -1,5 +1,6 @@
-function 2(str) {
+//Best Solution
+function reverseString(str) {
     return str.split('').reverse().join('');
 }
 
-2("hello");
+reverseString("hello");
